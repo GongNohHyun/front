@@ -21,8 +21,8 @@
     --secondary-light: #8a8f98;      /* 비활성/서브 */
     --dark: #343b48;                 /* 다크텍스트 */
 
-    --bg-light: #E9F3FF;             /* 메인 배경 */
-    --bg-subtle: #e9e9e9;            /* 구분선, 박스배경 등 */
+    --bg-light: #E9F3FF;             /* 옅은 스카이 메인 배경 */
+    --bg-subtle: #e9e9e9;            /* 옅은 그레이 구분선 등 */
     --white: #ffffff;                /* 기본배경 */
     --black: #000000;                /* 텍스트 강조시 */
 

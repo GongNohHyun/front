@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PageHeader</title>
+       <link rel="stylesheet" href="./css/00_style.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+  </head>
+  <body>
+      <header>
+        <div class="main-header">
+        <div class="header-container ml2 mr2">
+          <h1 class="logo">
+            <a href="#">#PAGE</a>
+          </h1>
+
+          <div class="auth-area">
+            <a href="#" class="signup">회원가입</a>
+            <a href="#" class="login pl2">로그인</a>
+            <a href="#" class="login pl2">장바구니</a>
+            <a href="#" class="login pl2">마이페이지</a>
+          </div>
+        </div>
+
+        <nav class="search ml2 mr2">
+          <div class="main-nav">
+            <button class="pc-toggle mt1" aria-label="메뉴 열기">
+              <img src="./img/menu.PNG" id="menuToggle" alt="메뉴 열기" />
+            </button>
+            <ul>
+              <li><a href="#">웹툰</a></li>
+              <li><a href="#">웹소설</a></li>
+              <li><a href="#">커뮤니티</a></li>
+            </ul>
+            <div class="pc-nav">
+              <div class="pdropdown-menu">
+                <ul>
+                  <li><a href="#">장르</a></li>
+                  <li><a href="#">장르</a></li>
+                  <li><a href="#">장르</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- 햄버거 메뉴 (모바일 전용) -->
+          <button class="mobile-toggle mt1" aria-label="메뉴 열기">
+            <img src="./img/menu.PNG" id="menuToggle" alt="메뉴 열기" />
+          </button>
+          <div class="mobile-nav">
+          <div class="mdropdown-menu">
+            <ul>
+              <li><a href="#">웹툰</a></li>
+              <li><a href="#">웹소설</a></li>
+              <li><a href="#">커뮤니티</a></li>
+            </ul>
+          </div>
+          </div>
+
+          <!-- 검색창 -->
+          <div class="search-bar">
+            <button type="submit">🔍</button>
+            <input type="text" placeholder="작품명 / 작가명 검색" />
+          </div>
+        </nav>
+        </div>
+      </header>
+
+    <!-- header 토글 JS (JSP 연동 전 테스트용) -->
+    <script>
+      document
+        .querySelector(".mobile-toggle")
+        ?.addEventListener("click", function () {
+          document.querySelector(".mobile-nav")?.classList.toggle("active");
+        });
+
+      document
+        .querySelector(".pc-toggle")
+        ?.addEventListener("click", function () {
+          document.querySelector(".pc-nav")?.classList.toggle("active");
+        });
+    </script>
+  </body>
+</html>

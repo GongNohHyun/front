@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HashTagPAGE_Home</title>
+    <link rel="stylesheet" href="./css/00_style.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+</head>
+<body>
+  <div class="page">
+    <div id="header"></div>
+      <main>
+        <div class="main-box mt4 mb4">
+        hello
+        </div>
+      </main>
+    <div id="footer"></div>
+  </div>
+
+ <script>
+
+function setHeaderToggleEvent(){
+      document
+        .querySelector(".mobile-toggle")
+        ?.addEventListener("click", function () {
+          document.querySelector(".mobile-nav")?.classList.toggle("active");
+        });
+
+      document
+        .querySelector(".pc-toggle")
+        ?.addEventListener("click", function () {
+          document.querySelector(".pc-nav")?.classList.toggle("active");
+        });
+        }
+
+        // 공통 헤더 불러오기
+    fetch('./header.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('header').innerHTML = data;
+        setHeaderToggleEvent();
+      });
+
+    // 공통 푸터 불러오기
+    fetch('./footer.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('footer').innerHTML = data;
+      });
+  </script>
+
+</body>
+</html>

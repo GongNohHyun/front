@@ -1,0 +1,185 @@
+.main-header {
+  border-bottom: 1px solid var(--sub3);
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo a {
+  font-weight: 900;
+  font-size: 3.5rem;
+  color: var(--primary-blue1);
+  text-decoration: none;
+}
+
+.auth-area a {
+  font-size: 14px;
+  color: var(--secondary-light);
+  text-decoration: none;
+
+}
+
+.main-nav {
+  display: none;
+}
+
+.pdropdown-menu {
+  display: none;
+}
+
+.mobile-toggle {
+  position: relative;
+  display: inline-block;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.mdropdown-menu {
+  position: absolute;
+  top: 1rem; /* 햄버거 버튼 아래로! 높이는 조정 가능 */
+  left: -10rem;
+  background-color: var(--bg-subtle);
+  border: 1px solid var(--bg-subtle);
+  padding: 0.5em;
+  display: none;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mobile-toggle img {
+  width: 24px;
+  height: 24px;
+}
+
+.mobile-nav {
+  display: none;
+  margin-top: 10px;
+  position: relative
+}
+
+.mobile-nav.active {
+  display: block;
+}
+
+.mobile-nav ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.mobile-nav li a {
+  display: inline-block;
+  min-width: 60px;
+  white-space: nowrap;
+  text-align: center;
+  padding: 10px;
+}
+
+
+.search {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+}
+
+.search-bar input {
+  padding: 6px 10px;
+  border: 1px solid var(--bg-subtle);
+  border-radius: 4px;
+}
+
+.search-bar button {
+  margin-left: 5px;
+  background: var(--primary);
+  border: none;
+  color: var(--white);
+  padding: 6px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+/* TODO: 태블릿 */
+@media screen and (min-width: 768px) {
+  .page {
+    width: 80vw;
+  }
+
+  .main-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .pc-toggle {
+    position: relative;
+    display: inline-block;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+  }
+  .pc-toggle img {
+    width: 24px;
+    height: 24px;
+  }
+
+  .main-nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  .pc-nav {
+    position: relative;
+  }
+  .pc-nav a {
+    display: block;
+    padding: 10px;
+  }
+
+  .pdropdown-menu {
+    display: none;
+    position: absolute;
+    top: 2rem; /* 햄버거 버튼 아래로! 높이는 조정 가능 */
+    left: -14rem;
+    background-color: var(--bg-subtle);
+    border: 1px solid var(--bg-subtle);
+    padding: 0.5em;
+    z-index: 10;
+  }
+
+  .pc-nav.active .pdropdown-menu {
+    display: block;
+  }
+
+  .mobile-toggle {
+    display: none;
+  }
+
+  .mdropdown-menu {
+    display: none;
+  }
+}
+
+/* TODO: pc */
+@media screen and (min-width: 1024px) {
+  .page {
+    width: 60vw;
+  }
+}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PageHeader</title>
+    <link rel="stylesheet" href="./css/00_style.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+  </head>
+  <body>
+    <header>
+      <div class="main-header">
+        <div class="header-container ml2 mr2">
+          <h1 class="logo">
+            <a href="#">#PAGE</a>
+          </h1>
+
+          <div class="auth-area">
+            <a href="#" class="btn-rounded signup">회원가입</a>
+            <a href="#" class="btn-rounded login pl2">로그인</a>
+            <a href="#" class="btn-rounded login pl2">장바구니</a>
+            <a href="#" class="btn-rounded login pl2">마이페이지</a>
+          </div>
+        </div>
+
+        <nav class="search ml2 mr2 mb4">
+          <div class="main-nav">
+            <button class="pc-toggle mt1" aria-label="메뉴 열기">
+              <img src="./img/menu.PNG" id="menuToggle" alt="메뉴 열기" />
+            </button>
+            <ul>
+              <li><a href="#" class="btn-rounded">웹툰</a></li>
+              <li><a href="#" class="btn-rounded">웹소설</a></li>
+              <li><a href="#" class="btn-rounded">커뮤니티</a></li>
+            </ul>
+            <div class="pc-nav">
+              <div class="pdropdown-menu">
+                <div class="menu-column">
+                  <a href="#"><h3>웹툰</h3></a>
+                  <a href="#">판타지 / SF </a>
+                  <a href="#">추리 스릴러</a>
+                  <a href="#">드라마</a>
+                </div>
+                <div class="menu-column">
+                  <a href="#"><h3>웹소설</h3></a>
+                  <a href="#">판타지 / SF </a>
+                  <a href="#">추리 스릴러</a>
+                  <a href="#">드라마</a>
+                </div>
+                <div class="menu-column">
+                  <a href="#"><h3>커뮤니티</h3></a>
+                  <a href="#">자유게시판 </a>
+                  <a href="#">찬반 토론</a>
+                  <a href="#">추천</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 햄버거 메뉴 (모바일 전용) -->
+          <div class="mobile-toggle">
+            <button class="mt1" aria-label="메뉴 열기">
+              <img src="./img/menu.PNG" id="menuToggle" alt="메뉴 열기" />
+            </button>
+          </div>
+          <div class="mobile-nav">
+            <div class="mdropdown-menu">
+              <div class="menu-column">
+                <a href="#"><h3>웹툰</h3></a>
+                <a href="#">판타지 / SF </a>
+                <a href="#">추리 스릴러</a>
+                <a href="#">드라마</a>
+              </div>
+              <div class="menu-column">
+                <a href="#"><h3>웹소설</h3></a>
+                <a href="#">판타지 / SF </a>
+                <a href="#">추리 스릴러</a>
+                <a href="#">드라마</a>
+              </div>
+              <div class="menu-column">
+                <a href="#"><h3>커뮤니티</h3></a>
+                <a href="#">자유게시판 </a>
+                <a href="#">찬반 토론</a>
+                <a href="#">추천</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 검색창 -->
+          <div class="search-bar">
+            <button type="submit">🔍</button>
+            <input type="text" placeholder="작품명 / 작가명 검색" />
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- header 토글 JS (JSP 연동 전 테스트용) -->
+    <script>
+      document
+        .querySelector(".mobile-toggle")
+        ?.addEventListener("click", function () {
+          document.querySelector(".mobile-nav")?.classList.toggle("active");
+        });
+
+      document
+        .querySelector(".pc-toggle")
+        ?.addEventListener("click", function () {
+          document.querySelector(".pc-nav")?.classList.toggle("active");
+        });
+    </script>
+  </body>
+</html>

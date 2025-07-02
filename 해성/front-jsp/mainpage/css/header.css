@@ -6,12 +6,14 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  
 }
 
-.logo a {
-  font-weight: 900;
-  font-size: 3.5rem;
-  color: var(--primary-blue1);
+.logo img {
+  width: auto;
+  height: auto;
+  max-height: 4.5rem;
+  object-fit: contain;
 }
 
 .auth-area a {

@@ -30,10 +30,91 @@
 }
 
 * {margin: 0;padding: 0;box-sizing: border-box;}
+
 .page {width:97vw; margin: 0 auto;}
+
 body {font-family: "Montserrat","Noto Sans KR", sans-serif;line-height: 1.6;}
+
 li {list-style-type: none;}
-a {text-decoration: none;color: var(--text-dark);}
+
+a {text-decoration: none; cursor: pointer}
+
+a.a-rounded {
+  display: inline-block;
+  background-color: var(--white);
+  color: var(--primary-blue1); /* 기본 글자색 */
+  font-weight: bold;
+  text-align: center;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none; /* 밑줄 제거 */
+}
+
+.a-rounded-al {
+  background-color: var(--primary-blue2); /* 배경색 어둡게 */
+  color: var(--white); /* 글자 흰색으로 반전 */
+  border: 2px solid var(--primary-blue2);
+  border-radius: 999px; /* 완전 둥글게 */
+  padding: 6px 14px;
+  font-weight: bold;
+}
+
+a.a-rounded-al:hover {
+  background-color: var(--primary-blue1); /* 배경색 어둡게 */
+  color: var(--white); /* 글자 흰색으로 반전 */
+  border: 2px solid var(--primary-blue1);
+  border-radius: 999px; /* 완전 둥글게 */
+  padding: 6px 14px;
+}
+
+a.a-rounded:hover {
+  background-color: var(--primary-blue1); /* 배경색 어둡게 */
+  color: var(--white); /* 글자 흰색으로 반전 */
+  border: 2px solid var(--primary-blue1);
+  border-radius: 999px; /* 완전 둥글게 */
+  padding: 6px 14px;
+}
+
+button {all: unset; cursor: pointer;
+}
+
+button.btn-text-danger:hover {
+    display: inline-block;
+    color: white;
+    background-color: var(--danger);
+    text-align: center;
+    transition: all 0.2s ease-in-out;
+    border-radius: 999px;
+    padding: 2px 6px;
+}
+
+button.btn-text-like:hover {
+    display: inline-block;
+    color: white;
+    background-color: var(--warning);
+    text-align: center;
+    transition: all 0.2s ease-in-out;
+    border-radius: 999px;
+    padding: 2px 6px;
+}
+
+button.btn-rounded {
+  display: inline-block;
+  background-color: var(--primary-blue2);
+  color: var(--white);
+  font-weight: bold;
+  text-align: center;
+  transition: all 0.2s ease-in-out;
+  border: 2px solid transparent;
+  border-radius: 999px;
+  padding: 6px 14px;
+}
+
+button.btn-rounded:hover {
+  background-color: var(--primary-blue1);
+  color: white;
+  border: 2px solid var(--primary-blue1);
+}
+
 /* 공통 여백 정하기 */
 /* 마진 위 5개 */
 .mt0 {margin-top:0.25rem !important;}
@@ -94,6 +175,7 @@ a {text-decoration: none;color: var(--text-dark);}
 .pl5 {padding-left:1.5rem !important;}
 /* 가로 크기(%) 4개 */
 .w100 {width:100% !important;}
+.w98 {width:98% !important;}
 .w75 {width:75% !important;}
 .w50 {width:50% !important;}
 .w25 {width:25% !important;}

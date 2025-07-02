@@ -6,19 +6,20 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  
 }
 
-.logo a {
-  font-weight: 900;
-  font-size: 3.5rem;
-  color: var(--primary-blue1);
+.logo img {
+  width: auto;
+  height: auto;
+  max-height: 4.5rem;
+  object-fit: contain;
 }
 
 .auth-area a {
   font-size: 1rem;
   color: var(--primary-blue1);
   font-weight: bold;
-
 }
 
 .main-nav {
@@ -30,7 +31,6 @@
 }
 
 .mobile-toggle {
-  position: relative;
   display: inline-block;
   background: none;
   border: none;
@@ -38,57 +38,56 @@
   cursor: pointer;
 }
 
-.mdropdown-menu {
-  position: absolute;
-  top: 1rem; /* 햄버거 버튼 아래로! 높이는 조정 가능 */
-  left: -11.5rem;
-  background-color: rgba(149, 160, 180, 0.562);
-  padding: 0.5em;
-  display: none;
-  z-index: 10;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-weight: bold;
-  color: var(--bg-light);
-}
-
 .mobile-toggle img {
   width: 24px;
   height: 24px;
 }
 
+.mdropdown-menu {
+  background-color: rgba(26, 58, 116, 0.664);
+  padding: 0.5em;
+  font-weight: bold;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
 .mobile-nav {
   display: none;
   margin-top: 10px;
-  position: relative
+  position: absolute;
+  z-index: 10;
+  top: 3rem;
+  left: 0;
+  right: 0;
 }
 
 .mobile-nav.active {
   display: block;
 }
 
-.mobile-nav ul {
-  padding: 0;
-  margin: 0;
+.menu-column {
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
 
-.mobile-nav li a {
+.menu-column a {
   display: inline-block;
   min-width: 60px;
   white-space: nowrap;
   text-align: center;
   padding: 10px;
+  color: var(--bg-light);
 }
-
 
 .search {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 
 .search-bar {
@@ -112,7 +111,6 @@
   cursor: pointer;
 }
 
-
 /* TODO: 태블릿 */
 @media screen and (min-width: 768px) {
   .page {
@@ -127,7 +125,7 @@
   }
 
   .pc-toggle {
-    position: relative;
+    /* position: relative; */
     display: inline-block;
     background: none;
     border: none;
@@ -149,20 +147,22 @@
   .pc-nav {
     position: relative;
   }
-  .pc-nav a {
-    display: block;
-    padding: 10px;
-  }
 
   .pdropdown-menu {
     display: none;
     position: absolute;
-    top: 2rem; /* 햄버거 버튼 아래로! 높이는 조정 가능 */
+    top: 2.5rem; /* 햄버거 버튼 아래로! 높이는 조정 가능 */
     left: -14rem;
-    background-color: rgba(149, 160, 180, 0.562);
+    background-color: rgba(26, 58, 116, 0.664);
     padding: 0.5em;
     z-index: 10;
     color: var(--bg-light);
+  }
+
+  .menu-column {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
   }
 
   .pc-nav.active .pdropdown-menu {

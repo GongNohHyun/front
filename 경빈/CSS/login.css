@@ -77,3 +77,9 @@ button.login-btn {
   border-radius: 25px;
   cursor: pointer;
 }
+/* TODO: pc */
+@media screen and (min-width: 1024px) {
+  .page {
+    width: 60vw;
+  }
+}

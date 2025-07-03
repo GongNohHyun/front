@@ -80,3 +80,10 @@ body {
       color: #212529;
       margin-bottom: 15px;
     }
+
+    /* TODO: pc */
+@media screen and (min-width: 1024px) {
+  .page {
+    width: 60vw;
+  }
+}

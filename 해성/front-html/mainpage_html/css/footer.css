@@ -1,5 +1,5 @@
 footer {
-  background-color: #4368a7; /* 메인 블루 계열 컬러로 */
+  background-color: var(--primary-blue1); /* 메인 블루 계열 컬러로 */
   color: white;
   font-size: 14px;
 }

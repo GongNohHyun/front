@@ -110,10 +110,12 @@ button.btn-text-like:hover {
     display: inline-blok;
     color: white;
     background-color: var(--warning);
+    border: 2px solid rgba(0, 0, 0, 0.014);
     text-align: center;
     transition: all 0.2s ease-in-out;
     border-radius: 999px;
     padding: 2px 6px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 button.btn-rounded {

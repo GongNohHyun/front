@@ -1,12 +1,12 @@
 body {
-  background-color: #F8F9FA;
+  background-color: #ffffff;
   margin: 0;
   padding: 0;
   height: 100vh;
 }
 
 .community-freetalk-container {
-  background-color: #F8F9FA;
+  background-color: #ffffff;
   margin-top: 3rem;
   display: flex;
   align-items: flex-start;
@@ -106,6 +106,16 @@ body {
   width: 10%;
   text-align: right;
 }
+
+.btn-area {
+  
+  display: flex;
+  justify-content: flex-end; /* 오른쪽 정렬 */
+  gap: 1rem;                 /* 버튼 사이 간격 */
+  
+  padding-right: 2.2rem;
+}
+
 
 .bottom-page-list {
   display: flex;

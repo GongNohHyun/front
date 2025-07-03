@@ -1,12 +1,12 @@
 body {
-  background-color: #F8F9FA;
+  background-color: #ffffff;
   margin: 0;
   padding: 0;
   height: 100vh;
 }
 
 .mycasezzim-container {
-  background-color: #F8F9FA;
+  background-color: #ffffff;
   margin-top: 3rem;
   display: flex;
   align-items: flex-start;

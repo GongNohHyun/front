@@ -38,7 +38,7 @@
 
 
 
-/* 본문 제목 */
+
 .community-hottalk-title {
     padding-top: 1rem;
     
@@ -83,7 +83,7 @@
 
 
 
-/* 논쟁 모형 부분 */
+
 .debate-box {
   width: 300px;
   margin: 2rem auto;
@@ -157,7 +157,7 @@
 }
 
 
-/*  댓글 창 */
+
 .comment {
   background-color: #eee;
   border-bottom: 1px solid #ddd;

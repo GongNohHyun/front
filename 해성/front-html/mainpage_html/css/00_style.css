@@ -40,11 +40,11 @@ html, body {
   margin: 0;
 }
 
-.page {
+/* .page {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-}
+} */
 
 main {
   flex: 1; /* 여기서 남는 공간 다 차지하게 함 */
@@ -63,10 +63,11 @@ a.a-rounded {
   display: inline-block;
   background-color: var(--white);
   color: var(--primary-blue1); /* 기본 글자색 */
-  font-weight: bold;
+  font-weight: 600;
+  line-height: 1.2;
   text-align: center;
   transition: all 0.2s ease-in-out;
-  text-decoration: none; /* 밑줄 제거 */
+  vertical-align: middle;
 }
 
 a.a-rounded:hover {
@@ -75,6 +76,10 @@ a.a-rounded:hover {
   border: 2px solid var(--primary-blue1);
   border-radius: 999px; /* 완전 둥글게 */
   padding: 6px 14px;
+}
+
+a.a-rounded:focus {
+  outline: none;
 }
 
 .a-rounded-al {

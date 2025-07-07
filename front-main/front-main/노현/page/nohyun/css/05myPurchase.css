@@ -1,0 +1,184 @@
+/* 전체 레이아웃 */
+.myPurchase-container {
+    display: flex;
+    flex-direction: column;
+    /* 세로로 정렬 */
+    margin-top: 1rem;
+
+}
+
+/* 사이드 메뉴 */
+.myPurchase-sidebar-box {
+
+    width: 100%;
+
+    margin: 0 auto;
+    border-bottom: 1px solid var(--bg-subtle);
+
+
+}
+
+.myPurchase-sidebar {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    padding-bottom: 1rem;
+    justify-content: center;
+
+}
+
+.myPurchase-sidebar li {
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.myPurchase-sidebar li a {
+    color: black;
+    text-decoration: none;
+}
+
+
+.myPurchase-content {
+    flex: 1;
+    display: flex;
+    min-width: 0;
+}
+
+/* 본문 제목 */
+.myPurchase-title {
+    padding-top: 1rem;
+
+}
+
+.myPurchase-subtitle h4 {
+
+    border-bottom: 0.1rem solid var(--bg-subtle);
+    padding: 1rem 0 1rem 0;
+
+}
+
+
+
+.myPurchase-main {
+    display: flex;
+
+    width: 100%;
+
+
+}
+
+/* 본문 내용 */
+.myPurchase-main-box {
+    width: auto;
+    display: flex;
+
+    padding-right: 0.3rem;
+    padding-top: 1rem;
+    flex-direction: column;
+}
+
+
+.myPurchase-table th {
+    width: 60vw;
+    height: 5vh;
+    color: white;
+    background-color: cornflowerblue;
+    border: 2px solid rgb(255, 255, 255);
+
+}
+
+
+
+.cash-list {
+
+    display: flex;
+    flex-direction: column;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    line-height: 3;
+
+}
+
+
+
+@media (min-width: 1024px) {
+    .myPurchase-container {
+        margin-top: 3rem;
+        flex-direction: row;
+        display: flex;
+    }
+
+    /* 사이드 메뉴 */
+    .myPurchase-sidebar-box {
+        width: 12rem;
+        border-bottom: none;
+    }
+
+    .myPurchase-sidebar {
+        padding-left: 2rem;
+        flex-direction: column;
+    }
+
+    .myPurchase-sidebar li {
+        font-size: 0.8rem;
+        font-weight: bold;
+    }
+
+    .myPurchase-sidebar li a {
+        color: black;
+        text-decoration: none;
+
+    }
+
+    .myPurchase-divider {
+        width: 1px;
+        background-color: var(--bg-subtle);
+        height: auto;
+        /* 기본은 콘텐츠 높이에 맞춤 */
+        margin: 0 0 1rem 0;
+    }
+
+
+
+    .myPurchase-content {
+        width: 100%;
+    }
+
+
+
+    .myPurchase-title {
+        margin-left: 1rem;
+
+    }
+
+    .myPurchase-main {
+        display: flex;
+        padding-top: 1rem;
+        width: 100%;
+    }
+
+
+    .myPurchase-main-box {
+        width: auto;
+        display: flex;
+    }
+
+    .myPurchase-table {
+        width: 100%;
+        padding: 0 1rem;
+    }
+
+    .myPurchase-table table {
+        font-size: 0.9rem;
+    }
+
+
+    .cash-list {
+        padding-left: 2rem;
+        line-height: 3;
+
+    }
+
+
+
+}

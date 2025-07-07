@@ -1,0 +1,73 @@
+.freewrite-page {
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.backpage {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.write-category-select {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  font-weight: bold;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.write-category-select .category-display {
+  padding: 0.4rem 0.2rem;
+  background-color: var(--bg-subtle, #f1f1f1);
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  color: var(--dark, #333);
+  min-width: 100px;
+  text-align: center;
+}
+
+.write-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.write-title {
+  padding: 0.8rem;
+  font-size: 1.1rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+.write-content {
+  padding: 1rem;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  resize: vertical;
+}
+
+.file-upload label {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.write-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+.btn-rounded.delete {
+  background-color: var(--danger, #cc3333);
+}
+.btn-rounded.cancel {
+  background-color: var(--secondary-light);
+}
+
+@media screen and (min-width: 768px) {
+  .freewrite-page {
+    width: 90%;}
+}

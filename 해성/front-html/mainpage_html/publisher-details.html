@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>publisherPage</title>
+    <link rel="stylesheet" href="./css/00_style.css" />
+    <link rel="stylesheet" href="css/publisher-details.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="./css/simple-header.css" />
+  </head>
+  <body>
+    <div class="page">
+      <!-- 헤더 -->
+      <div id="simple-header"></div>
+
+      <main class="publisher-page">
+        <!-- 출판사 프로필 -->
+        <section class="publisher mt2">
+          <div class="publisher-cover">
+            <div class="publisher-image">
+              <img src="./img/bookcard21.jpg" alt="" />
+            </div>
+            <div class="publisher-name"><span>uk Entertainment</span></div>
+          </div>
+          <div class="publisher-note mt1">
+            <h3>출판사 sns</h3>
+            <p>
+              <a
+                href="https://instagram.com/uk_ent"
+                target="_blank"
+                rel="noopener noreferrer">
+                @uk_ent</a>
+            </p>
+            <p>e-mail uk_ent2105@google.com</p>
+          </div>
+        </section>
+
+        <!-- 작품 리스트 -->
+        <div class="publisher-work">
+          <section class="publisherwork-list">
+            <h3 class="list-title">출판 작품</h3>
+            <!-- 요기 목록 -->
+            <ul class="work-list">
+              <li class="work-item mb1">
+                <a href="#" class="work-link">
+                  <div class="card">
+                    <img src="./img/bookcard20.jpg" alt="웹툰1" />
+                      <div class="info-container">
+                        <p>백수가 너무 유능하다</p>
+                        <div class="flex-row">
+                          <p>시하</p>
+                        <div class="my-wishlist" data-liked="false">🤍</div>
+                      </div>
+                    </div>
+                  </div>
+                </a>               
+              </li>
+
+              <!-- 반복 -->
+
+              <li class="work-item mb1">
+                <a href="#" class="work-link">
+                  <div class="card">
+                    <img src="./img/bookcard20.jpg" alt="웹툰1" />
+                      <div class="info-container">
+                        <p>백수가 너무 유능하다</p>
+                        <div class="flex-row">
+                          <p>시하</p>
+                        <div class="my-wishlist" data-liked="false">🤍</div>
+                      </div>
+                    </div>
+                  </div>
+                </a>               
+              </li>
+
+              <li class="work-item mb1">
+                <a href="#" class="work-link">
+                  <div class="card">
+                    <img src="./img/bookcard20.jpg" alt="웹툰1" />
+                      <div class="info-container">
+                        <p>백수가 너무 유능하다</p>
+                        <div class="flex-row">
+                          <p>시하</p>
+                        <div class="my-wishlist" data-liked="false">🤍</div>
+                      </div>
+                    </div>
+                  </div>
+                </a>               
+              </li>
+
+              <li class="work-item mb1">
+                <a href="#" class="work-link">
+                  <div class="card">
+                    <img src="./img/bookcard20.jpg" alt="웹툰1" />
+                      <div class="info-container">
+                        <p>백수가 너무 유능하다</p>
+                        <div class="flex-row">
+                          <p>시하</p>
+                        <div class="my-wishlist" data-liked="false">🤍</div>
+                      </div>
+                    </div>
+                  </div>
+                </a>               
+              </li>
+
+            </ul>
+          </section>
+        </div>
+      </main>
+
+      <!-- 푸터 -->
+      <div id="footer"></div>
+    </div>
+
+    <script>
+      // 로그인 상태
+      const status = "guest"; // 또는 "user"
+
+      // 상태에 따른 아이콘 변경
+      function renderAuthMenu() {
+        const authArea = document.querySelector(".auth-area");
+        if (!authArea) return;
+        authArea.innerHTML =
+          status === "guest"
+            ? `<a href="#" class="a-rounded-al signup">회원가입</a>
+        <a href="#" class="a-rounded-al login pl2">로그인</a>`
+            : `<a href="#" class="a-rounded-al cart pl2">장바구니</a>
+        <a href="#" class="a-rounded-al wishlist pl2">찜목록</a>`;
+      }
+    </script>
+
+    <script>
+      // 공통 헤더 불러오기
+      fetch("./simple-header.html")
+        .then((res) => res.text())
+        .then((data) => {
+          document.getElementById("simple-header").innerHTML = data;
+          renderAuthMenu();
+        });
+
+      // 공통 푸터 불러오기
+      fetch("./footer.html")
+        .then((res) => res.text())
+        .then((data) => {
+          document.getElementById("footer").innerHTML = data;
+        });
+    </script>
+
+    <!-- 찜목록 하트 토글 -->
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const wishlistButtons = document.querySelectorAll(".my-wishlist");
+
+        wishlistButtons.forEach((btn) => {
+          btn.addEventListener("click", (e) => {
+            e.stopPropagation(); // 부모 요소 클릭 방지
+            e.preventDefault(); // a태그의 이동막기
+
+            const liked = btn.classList.toggle("liked");
+            btn.textContent = liked ? "❤️" : "🤍";
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

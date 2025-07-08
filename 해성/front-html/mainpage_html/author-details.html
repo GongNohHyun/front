@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>authorPage</title>
+    <link rel="stylesheet" href="./css/00_style.css" />
+    <link rel="stylesheet" href="css/author-details.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="./css/simple-header.css" />
+  </head>
+  <body>
+    <div class="page">
+      <!-- 헤더 -->
+      <div id="simple-header"></div>
+
+      <main class="author-page">
+        <!-- 작가 프로필 -->
+        <section class="author mt2">
+          <div class="author-cover">
+            <div class="author-image">
+              <img src="./img/bookcard18.jpg" alt="" />
+            </div>
+            <div class="author-name"><span>대대원</span></div>
+          </div>
+          <div class="author-profile">
+            <div class="author-history">
+              <p>2023년 '이세계 착각헌터' 출간</p>
+              <p>2021년 '던전 미식가' 출간</p>
+            </div>
+            <div class="author-note">
+              <h4>작가 sns</h4>
+              <p><a href="https://instagram.com/daedaewon"
+                target="_blank" rel="noopener noreferrer">
+                @daedaewon</a></p>
+              <p>e-mail daedae57@google.com</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- 작품 리스트 -->
+        <div class="author-work">
+          <section class="authorwork-list">
+            <h3 class="list-title">작가 작품</h3>
+              <!-- 요기 목록 -->
+            <ul class="work-list">
+              <li class="work-item mb1">
+                <a href="/episode/view/1" class="work-link">
+                  <div class="thumb">
+                    <img src="./img/episode2.jpg" alt="표지" />
+                  </div>
+                  <div class="work-info">
+                    <div class="work-title">이세계 착각헌터</div>
+                    <div class="work-publisher">ab Entertainment</div>
+                    <div class="work-sub">
+                      내게는 비밀이 있다 그게 뭐냐면...
+                    </div>
+                  </div>
+                </a>
+                <div class="my-wishlist" data-liked="false">🤍</div>
+              </li>
+                <!-- 반복 -->
+              <li class="work-item mb1">
+                <a href="/episode/view/1" class="work-link">
+                  <div class="thumb">
+                    <img src="./img/bookcard17.jpg" alt="표지" />
+                  </div>
+                  <div class="work-info">
+                    <div class="work-title">던전 미식가</div>
+                    <div class="work-publisher">익시드</div>
+                    <div class="work-sub">눈 떠보니 먹보 괴물...</div>
+                  </div>
+                </a>
+                <div class="my-wishlist" data-liked="false">🤍</div>
+              </li>
+            </ul>
+          </section>
+        </div>
+      </main>
+
+      <!-- 푸터 -->
+      <div id="footer"></div>
+    </div>
+
+    <script>
+      // 로그인 상태
+      const status = "guest"; // 또는 "user"
+
+      // 상태에 따른 아이콘 변경
+      function renderAuthMenu() {
+        const authArea = document.querySelector(".auth-area");
+        if (!authArea) return;
+        authArea.innerHTML =
+          status === "guest"
+            ? `<a href="#" class="a-rounded-al signup">회원가입</a>
+        <a href="#" class="a-rounded-al login pl2">로그인</a>`
+            : `<a href="#" class="a-rounded-al cart pl2">장바구니</a>
+        <a href="#" class="a-rounded-al wishlist pl2">찜목록</a>`;
+      }
+    </script>
+
+    <script>
+      // 공통 헤더 불러오기
+      fetch("./simple-header.html")
+        .then((res) => res.text())
+        .then((data) => {
+          document.getElementById("simple-header").innerHTML = data;
+          renderAuthMenu();
+        });
+
+      // 공통 푸터 불러오기
+      fetch("./footer.html")
+        .then((res) => res.text())
+        .then((data) => {
+          document.getElementById("footer").innerHTML = data;
+        });
+    </script>
+
+      <!-- 찜목록 하트 토글 -->
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const wishlistButtons = document.querySelectorAll(".my-wishlist");
+
+        wishlistButtons.forEach((btn) => {
+          btn.addEventListener("click", () => {
+            const liked = btn.classList.toggle("liked");
+            btn.textContent = liked ? "❤️" : "🤍";
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

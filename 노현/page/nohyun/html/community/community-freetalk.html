@@ -1,175 +1,76 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="/page/nohyun/css/00_style.css" />
-    <link rel="stylesheet" href="/page/nohyun/css/community-freetalk.css" />
-    <link rel="stylesheet" href="/page/nohyun/css/footer.css" />
-    <link rel="stylesheet" href="/page/nohyun/css/header.css" />
-  </head>
+<html lang="ko">
 
-  <body>
-    <div class="page">
-      <div id="header"></div>
-      <main>
-        <div class="community-freetalk-container">
-          <div class="community-freetalk-border-box">
-            <ul class="community-freetalk-sidebar">
-                <li><a href="#">자유게시판</a></li>
-              <li><a href="#">뜨거운논쟁</a></li>
-              <li><a href="#">추천 작품</a></li>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>게시글 상세보기</title>
+  <link rel="stylesheet" href="/css/community-freetalk.css" />
+</head>
 
+<body>
+  <div class="container">
 
-            </ul>
-          </div>
+    <!-- 게시글 -->
+    <article class="post-detail">
+      <h2 class="post-title">첫 글입니다! 반가워요 👋</h2>
+      <div class="post-meta">
+        <span>작성자: 홍길동</span>
+        <span>2025.07.08</span>
+        <span>조회수: 12</span>
+      </div>
+      <div class="post-content">
+        <p>이 커뮤니티에 첫 글을 남깁니다. 잘 부탁드려요!</p>
+      </div>
+    </article>
 
-          <div class="main pl5">
-            <div class="community-freetalk-body">
-              <h1>자유게시판</h1>
-              <div class="community-freetalk-wrapper">
-                
-                <div class="community-freetalk-content">
-                <div class="community-freetalk-table">
-  <table>
-    <thead>
-      <tr>
-        <th class="title-col">[제목]</th>
-        <th class="nick-col">[닉네임]</th>
-        <th class="date-col">[날짜]</th>
-        <th class="view-col">[조회수]</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        
-        <td class="title-col"><a href="#">[자유] 오늘은 날씨가 너무 더운데 엄청 시원한 웹툰 추천있을까여? [5]</a></td>
-        <td class="nick-col">와그라노</td>
-        <td class="date-col">06-27</td>
-        <td class="view-col">5</td>
-      </tr>
-    </tbody>
-        <tbody>
-      <tr>
-        <td class="title-col"><a href="#">[자유] 으이구 진짜 잘한다 잘해</a></td>
-        <td class="nick-col">엽떡</td>
-        <td class="date-col">06-24</td>
-        <td class="view-col">5</td>
-      </tr>
-    </tbody>
-        <tbody>
-      <tr>
-        <td class="title-col"><a href="#">[자유] 이거 너무 재미없음</a></td>
-        <td class="nick-col">돈까스</td>
-        <td class="date-col">06-24</td>
-        <td class="view-col">5</td>
-      </tr>
-    </tbody>
-        <tbody>
-      <tr>
-        <td class="title-col"><a href="#">[자유] ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ</a></td>
-        <td class="nick-col">불고기피자</td>
-        <td class="date-col">06-24</td>
-        <td class="view-col">5</td>
-      </tr>
-    </tbody>
-        <tbody>
-      <tr>
-        <td class="title-col"><a href="#">[자유] 오늘은 날씨가 너무 더운데 엄청 시원한 웹툰 추천있을까여?[5]</a></td>
-        <td class="nick-col">짜계치</td>
-        <td class="date-col">06-24</td>
-        <td class="view-col">5</td>
-      </tr>
-    </tbody>
-        <tbody>
-      <tr>
-        <td class="title-col"><a href="#">[자유] 오늘은 날씨가 너무 더운데 엄청 시원한 웹툰 추천있을까여?[5]</a></td>
-        <td class="nick-col">불닭</td>
-        <td class="date-col">06-24</td>
-        <td class="view-col">5</td>
-      </tr>
-    </tbody>
-        <tbody>
-      <tr>
-        <td class="title-col"><a href="#">[자유] 오늘은 날씨가 너무 더운데 엄청 시원한 웹툰 추천있을까여?[5]</a></td>
-        <td class="nick-col">와그라노</td>
-        <td class="date-col">06-24</td>
-        <td class="view-col">5</td>
-      </tr>
-    </tbody>
-  </table>
-  <div class="btn-area">
-    <button>글쓰기</button>
-    <button>삭제</button>
-</div>
+    <!-- 댓글 -->
+    <section class="comment-section">
+      <h3>💬 댓글 <span class="comment-count">(2)</span></h3>
 
-<div class="bottom-page-list">
-    <nav aria-label="Page navigation example">
-  <ul class="pagination">
-    <li class="page-item">
-      <a class="page-link" href="#" aria-label="Previous">
-        <span aria-hidden="true">&laquo;</span>
-      </a>
-    </li>
-    <li class="page-item"><a class="page-link" href="#">1</a></li>
-    <li class="page-item"><a class="page-link" href="#">2</a></li>
-    <li class="page-item"><a class="page-link" href="#">3</a></li>
-    <li class="page-item">
-      <a class="page-link" href="#" aria-label="Next">
-        <span aria-hidden="true">&raquo;</span>
-      </a>
-    </li>
-  </ul>
-</nav>
-</div>
+      <!-- 댓글 1 -->
+      <div class="comment">
+        <div class="comment-author">익명1</div>
+        <div class="comment-text">반가워요! 저도 처음 왔어요.</div>
+        <div class="comment-meta">2025.07.08 15:22</div>
 
-
-
-
-
-
-
-                    </div>   
-                   </div>
-                </div>
-              </div>
-            </div>
+        <!-- 대댓글 -->
+        <div class="replies">
+          <div class="reply">
+            <div class="comment-author">익명2</div>
+            <div class="comment-text">저도요~ 반갑습니다!</div>
+            <div class="comment-meta">2025.07.08 15:45</div>
           </div>
         </div>
-      </main>
-      <div id="footer"></div>
-    </div>
-    <!-- 헤더 햄버거 -->
-    <script>
-      function setHeaderToggleEvent() {
-        document
-          .querySelector(".mobile-toggle")
-          ?.addEventListener("click", function () {
-            document.querySelector(".mobile-nav")?.classList.toggle("active");
-          });
 
-        document
-          .querySelector(".pc-toggle")
-          ?.addEventListener("click", function () {
-            document.querySelector(".pc-nav")?.classList.toggle("active");
-          });
-      }
+        <!-- 대댓글 작성 -->
+        <form class="reply-form">
+          <textarea placeholder="답글을 입력하세요..." required></textarea>
+          <button type="submit">답글 작성</button>
+        </form>
+      </div>
 
-      // 공통 헤더 불러오기
-      fetch("./header.html")
-        .then((res) => res.text())
-        .then((data) => {
-          document.getElementById("header").innerHTML = data;
-          setHeaderToggleEvent();
-        });
+      <!-- 댓글 2 -->
+      <div class="comment">
+        <div class="comment-author">익명3</div>
+        <div class="comment-text">좋은 하루 되세요!</div>
+        <div class="comment-meta">2025.07.08 16:10</div>
 
-      // 공통 푸터 불러오기
-      fetch("./footer.html")
-        .then((res) => res.text())
-        .then((data) => {
-          document.getElementById("footer").innerHTML = data;
-        });
-    </script>
-  </body>
+        <!-- 대댓글 없음 -->
+        <form class="reply-form">
+          <textarea placeholder="답글을 입력하세요..." required></textarea>
+          <button type="submit">답글 작성</button>
+        </form>
+      </div>
+
+      <!-- 댓글 작성 -->
+      <form class="comment-form">
+        <textarea placeholder="댓글을 입력하세요..." required></textarea>
+        <button type="submit">댓글 등록</button>
+      </form>
+    </section>
+
+  </div>
+</body>
+
 </html>

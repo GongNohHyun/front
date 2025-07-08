@@ -4,7 +4,7 @@
     flex-direction: column;
     /* 세로로 정렬 */
     margin-top: 1rem;
-   
+    margin-bottom: 1rem;
 }
 
 /* 사이드 메뉴 */
@@ -60,111 +60,63 @@
 }
 
 
-
-  /* 본문 내용 테이블 */
-.community-freetalk-table {
-   
-    
-    border-collapse: collapse;
-
-
-}
-
-  .community-freetalk-table table {
-    font-size: 0.55rem;
-    
-  }
-
-.community-freetalk-table th, td {
-    padding: 0.4rem 0.2rem; 
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap; 
-    
- 
-}
-
-.community-freetalk-table td {
-  background-color: #e9e9e9;
+.community-freetalk-list {
+  width: 100%;
+  background-color: #333;
+  color: white;
+  font-size: 0.7rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
   
 }
 
-.community-freetalk-table th {
-  background-color: #6a95c7;
-  border-bottom: 4px solid #fff; 
-}
-
-.community-freetalk-table table {
-  border-collapse: collapse;
-}
-
-.community-freetalk-table tbody tr {
-  border-bottom: 4px solid #fff; 
-}
-
-.num-col {
-  width: 10%;
-  text-align: left;
-}
 
 
-.title-col {
-  width: 35%;
-  text-align: left;
-}
 
-.nick-col {
-  width: 13%;
-  text-align: center;
-}
 
-.date-col {
-  width: 12%;
-  text-align: center;
-}
 
-.view-col {
-  width: 30%;
-  text-align: center;
-}
+/* 페이지네이션 */
 
-/* 글쓰기 버튼 */
-.btn-area {
-  
-  
+.pagination {
   display: flex;
-  justify-content: flex-end; 
-  gap: 1rem;                 
-  
-  font-size: 0.6rem;
-
-}
-
-/* 페이지 리스트 버튼 */
-.bottom-page-list {
-  display: flex;
-  justify-content: center; 
+  justify-content: center;
   margin-top: 2rem;
 }
 
-.pagination {
-  display: flex;          
-  gap: 0.5rem;             
+.pagination ul {
+  display: flex;
+  gap: 0.5rem;
+  padding: 0;
 }
 
-.page-item a {
-  padding: 0.2rem 0.5rem;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  color: #333;
+.pagination li a {
+  display: block;
+  padding: 0.3rem 1rem;
   text-decoration: none;
-  font-size: 0.7rem;
+  border: 1px solid #ccc;
+  border-radius: 1rem;
+  color: var(--primary-blue1, #003399);
+  transition: all 0.2s ease-in-out;
 }
 
-.page-item a:hover {
-  background-color: #8cb6f1;
+.pagination li a:hover {
+  background-color: var(--primary-blue1, #003399);
+  color: white;
 }
 
+.pagination .active a {
+  background-color: var(--primary-blue1, #003399);
+  color: white;
+  font-weight: bold;
+  border-color: var(--primary-blue1);
+}
+
+.pagination li.active a {
+  background-color: var(--primary-blue1);
+  color: white;
+  border-radius: 50%;
+  font-weight: bold;
+}
 
 
 @media (min-width: 1024px) {

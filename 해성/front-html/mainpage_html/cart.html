@@ -11,7 +11,7 @@
 </head>
 <body>
 <div class="page">
-  <div id="header"></div>
+  <div id="simple-header"></div>
 
   <!-- 장바구니 본문 -->
     <main class="cart-container pl1 pr1">
@@ -132,10 +132,10 @@
       }
 
       // 공통 헤더 불러오기
-      fetch("./header.html")
+      fetch("./simple-header.html")
         .then((res) => res.text())
         .then((data) => {
-          document.getElementById("header").innerHTML = data;
+          document.getElementById("simple-header").innerHTML = data;
           setHeaderToggleEvent();
         });
 

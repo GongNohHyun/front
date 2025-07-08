@@ -8,14 +8,14 @@
     <link rel="stylesheet" href="/css/00_style.css" />
     <link rel="stylesheet" href="/css/01community-freetalk.css" />
     <link rel="stylesheet" href="/css/footer.css" />
-    <link rel="stylesheet" href="/css/header.css" />
+    <link rel="stylesheet" href="/css/main-header.css" />
 </head>
 
 <body>
     <div class="page">
-        <div id="header"></div>
-       <main>
-        <!-- 본문 사이드 메뉴 -->
+        <div id="main-header"></div>
+        <main>
+            <!-- 본문 사이드 메뉴 -->
             <div class="community-freetalk-container">
                 <div class="community-freetalk-sidebar-box">
                     <ul class="community-freetalk-sidebar">
@@ -33,148 +33,38 @@
                         <div class="community-freetalk-main">
                             <div class="community-freetalk-main-box">
                                 <div class="community-freetalk-main-body">
-                                    <div class="community-freetalk-table">
-                                        <table>
-                                            <thead>
-                                                <tr>
-                                                    <th class="num-col">[번호]</th>
-                                                    <th class="title-col">[제목]</th>
-                                                    <th class="nick-col">[글쓴이]</th>
-                                                    <th class="date-col">[날짜]</th>
-                                                    <th class="view-col">[조회]</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
+                                    <div class="community-freetalk-list">
+                                        <ul>
+                                            <li>
+                                                <div class="list-title"> <span>오늘 날씨가 진짜 너무 덥다ㅏㅏ</span></div>
+                                                <div class="list-nick"> <span>구구까까</span></div>
+                                                <div class="list-coment"><span>[5]</span></div>
 
-                                                    <td class="num-col"><a href="#">[123]</a></td>
-                                                    <td class="title-col"><a href="#">오늘은 날씨가 너무 더운데 엄청 시원한 웹툰
-                                                            추천있을까여? [5]</a></td>
-                                                    <td class="nick-col">와그라노</td>
-                                                    <td class="date-col">06-27</td>
-                                                    <td class="view-col">5</td>
-                                                </tr>
-                                            </tbody>
-                                            <tbody>
-                                                <tr>
-                                                     <td class="num-col"><a href="#">[122]</a></td>
-                                                    <td class="title-col"><a href="#">으이구 진짜 잘한다 잘해</a></td>
-                                                    <td class="nick-col">엽떡</td>
-                                                    <td class="date-col">06-24</td>
-                                                    <td class="view-col">5</td>
-                                                </tr>
-                                            </tbody>
-                                            <tbody>
-                                                <tr>
-                                                     <td class="num-col"><a href="#">[121]</a></td>
-                                                    <td class="title-col"><a href="#">이거 너무 재미없음</a></td>
-                                                    <td class="nick-col">돈까스</td>
-                                                    <td class="date-col">06-24</td>
-                                                    <td class="view-col">5</td>
-                                                </tr>
-                                            </tbody>
-                                            <tbody>
-                                                <tr>
-                                                     <td class="num-col"><a href="#">[120]</a></td>
-                                                    <td class="title-col"><a href="#">ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ</a></td>
-                                                    <td class="nick-col">불고기피자</td>
-                                                    <td class="date-col">06-24</td>
-                                                    <td class="view-col">5</td>
-                                                </tr>
-                                            </tbody>
-                                            <tbody>
-                                                <tr>
-                                                     <td class="num-col"><a href="#">[119]</a></td>
-                                                    <td class="title-col"><a href="#">오늘은 날씨가 너무 더운데 엄청 시원한 웹툰
-                                                            추천있을까여?[5]</a></td>
-                                                    <td class="nick-col">짜계치</td>
-                                                    <td class="date-col">06-24</td>
-                                                    <td class="view-col">5</td>
-                                                </tr>
-                                            </tbody>
-                                            <tbody>
-                                                <tr>
-                                                     <td class="num-col"><a href="#">[118]</a></td>
-                                                    <td class="title-col"><a href="#">오늘은 날씨가 너무 더운데 엄청 시원한 웹툰
-                                                            추천있을까여?[5]</a></td>
-                                                    <td class="nick-col">불닭</td>
-                                                    <td class="date-col">06-24</td>
-                                                    <td class="view-col">5</td>
-                                                </tr>
-                                            </tbody>
-                                            <tbody>
-                                                <tr>
-                                                     <td class="num-col"><a href="#">[117]</a></td>
-                                                    <td class="title-col"><a href="#">오늘은 날씨가 너무 더운데 엄청 시원한 웹툰
-                                                            추천있을까여?[5]</a></td>
-                                                    <td class="nick-col">와그라노</td>
-                                                    <td class="date-col">06-24</td>
-                                                    <td class="view-col">5</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                        <div class="btn-area">
-                                            <button>글작성</button>
-                                        </div>
-
-                                        <div class="bottom-page-list">
-                                            <nav aria-label="Page navigation example">
-                                                <ul class="pagination">
-                                                    <li class="page-item">
-                                                        <a class="page-link" href="#" aria-label="Previous">
-                                                            <span aria-hidden="true">&laquo;</span>
-                                                        </a>
-                                                    </li>
-                                                    <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                                    <li class="page-item">
-                                                        <a class="page-link" href="#" aria-label="Next">
-                                                            <span aria-hidden="true">&raquo;</span>
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </nav>
-                                        </div>
+                                                <div class="list-mook">
+                                            <li>
+                                                <div class="list-date"><span>2025.07.08</span></div>
+                                                <div class="list-view"><span>102</span></div>
+                                                <div class="list-like"><span>👍3</span></div>
+                                            </li>
                                     </div>
+                                    </li>
+
+                                    </ul>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
         </main>
         <div id="footer"></div>
     </div>
     <!-- 헤더 햄버거 -->
-    <script>
-        function setHeaderToggleEvent() {
-            document
-                .querySelector(".mobile-toggle")
-                ?.addEventListener("click", function () {
-                    document.querySelector(".mobile-nav")?.classList.toggle("active");
-                });
+    <script type="module">
+        import { setupMainHeader, setupFooter } from "./layout.js";
 
-            document
-                .querySelector(".pc-toggle")
-                ?.addEventListener("click", function () {
-                    document.querySelector(".pc-nav")?.classList.toggle("active");
-                });
-        }
-
-        // 공통 헤더 불러오기
-        fetch("./header.html")
-            .then((res) => res.text())
-            .then((data) => {
-                document.getElementById("header").innerHTML = data;
-                setHeaderToggleEvent();
-            });
-
-        // 공통 푸터 불러오기
-        fetch("./footer.html")
-            .then((res) => res.text())
-            .then((data) => {
-                document.getElementById("footer").innerHTML = data;
-            });
+        setupMainHeader("user"); // or "guest"
+        setupFooter(); // ID가 footer인 div에 footer.html 삽입
     </script>
 </body>
 

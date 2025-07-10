@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/hottalk.css" />
+    <link rel="stylesheet" href="./css/00_style.css" />
+    <link rel="stylesheet" href="./css/main-header.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+  </head>
+  <body>
+    <div class="page">
+      <div id="main-header"></div>
+
+      <main class="community-container">
+        <aside class="hottalk-side mt2">
+          <div class="hottalk-title">
+            <h2>뜨거운논쟁</h2>
+          </div>
+          <div class="hottalk-logo">
+            <img src="./img/tagchsize.png" alt="로고" />
+          </div>
+        </aside>
+
+        <div class="hottalk-divider"></div>
+        <!-- 선만 별도로 -->
+
+        <section class="hottalk-content mt2">
+          <div class="hottalk-subject">
+            <div class="hottalk-subjectbox">
+              <img src="./img/onpice.jpg" alt="원피스" />
+              <p>원피스는 실재한다?</p>
+            </div>
+            <div class="vote-options mt2 mb2">
+              <div class="option">
+                <span class="percent">12%</span>
+                <button class="blue">있다</button>
+              </div>
+              <div class="option">
+                <span class="percent">88%</span>
+                <button class="red">없다</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="comment-area">
+            <!-- 댓글 입력창 -->
+            <div class="comment-box comment-input ml1 mr1">
+              <input type="text" placeholder="의견을 입력하세요" />
+              <button>등록</button>
+            </div>
+
+            <!-- 댓글 목록 -->
+            <div class="user-comments mt4">
+              <!-- 반복 -->
+              <div class="comments-repeat pb2">
+                <div class="comment-header">
+                  <div class="user-nickname">
+                    <p>눈야임마</p>
+                  </div>
+                  <div class="vote-buttons">
+                    <button class="vote up">👍 <span>3</span></button>
+                    <button class="vote down">👎 <span></span></button>
+                  </div>
+                </div>
+                <div class="comment-body">
+                  <span class="comment-text">하하하하핳ㅎㅎ하하ㅏㅎㅎ핳</span>
+                  <div class="comment-btn">
+                    <div class="commenteditor">
+                      <button class="updata">수정</button>
+                    </div>
+                    <div class="commenteditor">
+                      <button class="delete">삭제</button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="comment-footer">
+                  <div class="input-timebox">
+                    <span class="input-time">09:32:20</span>
+                    <button class="reply-btn ml2">↳ 덧글</button>
+                  </div>
+                  <button class="report mr2">🚨</button>
+                </div>
+
+                <!-- 대댓글 입력창  -->
+                <div class="comment-reply reply-input ml1 mr1" style="display: none">
+                  <input type="text" placeholder="답글을 입력하세요" />
+                  <button>등록</button>
+                </div>
+              </div>
+
+
+              <!-- 삭제 : 반복 -->
+              <div class="comments-repeat pb2">
+                <div class="comment-header">
+                  <div class="user-nickname">
+                    <p>눈야임마</p>
+                  </div>
+                  <div class="vote-buttons">
+                    <button class="vote up">👍 <span>3</span></button>
+                    <button class="vote down">👎 <span></span></button>
+                  </div>
+                </div>
+                <div class="comment-body">
+                  <span class="comment-text">하하하하핳ㅎㅎ하하ㅏㅎㅎ핳</span>
+                  <div class="comment-btn">
+                    <div class="commenteditor">
+                      <button class="updata">수정</button>
+                    </div>
+                    <div class="commenteditor">
+                      <button class="delete">삭제</button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="comment-footer">
+                  <div class="input-timebox">
+                    <span class="input-time">09:32:20</span>
+                    <button class="reply-btn ml2">↳ 덧글</button>
+                  </div>
+                  <button class="report mr2">🚨</button>
+                </div>
+
+                <!-- 대댓글 입력창  -->
+                <div class="comment-reply reply-input" style="display: none">
+                  <input type="text" placeholder="답글을 입력하세요" />
+                  <button>등록</button>
+                </div>
+              </div>
+
+
+              <div class="comments-repeat pb2">
+                <div class="comment-header">
+                  <div class="user-nickname">
+                    <p>눈야임마</p>
+                  </div>
+                  <div class="vote-buttons">
+                    <button class="vote up">👍 <span>3</span></button>
+                    <button class="vote down">👎 <span></span></button>
+                  </div>
+                </div>
+                <div class="comment-body">
+                  <span class="comment-text">하하하하핳ㅎㅎ하하ㅏㅎㅎ핳</span>
+                  <div class="comment-btn">
+                    <div class="commenteditor">
+                      <button class="updata">수정</button>
+                    </div>
+                    <div class="commenteditor">
+                      <button class="delete">삭제</button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="comment-footer">
+                  <div class="input-timebox">
+                    <span class="input-time">09:32:20</span>
+                    <button class="reply-btn ml2">↳ 덧글</button>
+                  </div>
+                  <button class="report mr2">🚨</button>
+                </div>
+
+                <!-- 대댓글 입력창  -->
+                <div class="comment-reply reply-input" style="display: none">
+                  <input type="text" placeholder="답글을 입력하세요" />
+                  <button>등록</button>
+                </div>
+              </div>
+
+
+              <div class="comments-repeat pb2">
+                <div class="comment-header">
+                  <div class="user-nickname">
+                    <p>눈야임마</p>
+                  </div>
+                  <div class="vote-buttons">
+                    <button class="vote up">👍 <span>3</span></button>
+                    <button class="vote down">👎 <span></span></button>
+                  </div>
+                </div>
+                <div class="comment-body">
+                  <span class="comment-text">하하하하핳ㅎㅎ하하ㅏㅎㅎ핳</span>
+                  <div class="comment-btn">
+                    <div class="commenteditor">
+                      <button class="updata">수정</button>
+                    </div>
+                    <div class="commenteditor">
+                      <button class="delete">삭제</button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="comment-footer">
+                  <div class="input-timebox">
+                    <span class="input-time">09:32:20</span>
+                    <button class="reply-btn ml2">↳ 덧글</button>
+                  </div>
+                  <button class="report mr2">🚨</button>
+                </div>
+
+                <!-- 대댓글 입력창  -->
+                <div class="comment-reply reply-input" style="display: none">
+                  <input type="text" placeholder="답글을 입력하세요" />
+                  <button>등록</button>
+                </div>
+              </div>
+
+
+              <div class="comments-repeat pb2">
+                <div class="comment-header">
+                  <div class="user-nickname">
+                    <p>눈야임마</p>
+                  </div>
+                  <div class="vote-buttons">
+                    <button class="vote up">👍 <span>3</span></button>
+                    <button class="vote down">👎 <span></span></button>
+                  </div>
+                </div>
+                <div class="comment-body">
+                  <span class="comment-text">하하하하핳ㅎㅎ하하ㅏㅎㅎ핳</span>
+                  <div class="comment-btn">
+                    <div class="commenteditor">
+                      <button class="updata">수정</button>
+                    </div>
+                    <div class="commenteditor">
+                      <button class="delete">삭제</button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="comment-footer">
+                  <div class="input-timebox">
+                    <span class="input-time">09:32:20</span>
+                    <button class="reply-btn ml2">↳ 덧글</button>
+                  </div>
+                  <button class="report mr2">🚨</button>
+                </div>
+
+                <!-- 대댓글 입력창  -->
+                <div class="comment-reply reply-input" style="display: none">
+                  <input type="text" placeholder="답글을 입력하세요" />
+                  <button>등록</button>
+                </div>
+              </div>
+
+
+              <div class="comments-repeat pb2">
+                <div class="comment-header">
+                  <div class="user-nickname">
+                    <p>눈야임마</p>
+                  </div>
+                  <div class="vote-buttons">
+                    <button class="vote up">👍 <span>3</span></button>
+                    <button class="vote down">👎 <span></span></button>
+                  </div>
+                </div>
+                <div class="comment-body">
+                  <span class="comment-text">하하하하핳ㅎㅎ하하ㅏㅎㅎ핳</span>
+                  <div class="comment-btn">
+                    <div class="commenteditor">
+                      <button class="updata">수정</button>
+                    </div>
+                    <div class="commenteditor">
+                      <button class="delete">삭제</button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="comment-footer">
+                  <div class="input-timebox">
+                    <span class="input-time">09:32:20</span>
+                    <button class="reply-btn ml2">↳ 덧글</button>
+                  </div>
+                  <button class="report mr2">🚨</button>
+                </div>
+
+                <!-- 대댓글 입력창  -->
+                <div class="comment-reply reply-input" style="display: none">
+                  <input type="text" placeholder="답글을 입력하세요" />
+                  <button>등록</button>
+                </div>
+              </div>
+
+
+              <div class="comments-repeat pb2">
+                <div class="comment-header">
+                  <div class="user-nickname">
+                    <p>눈야임마</p>
+                  </div>
+                  <div class="vote-buttons">
+                    <button class="vote up">👍 <span>3</span></button>
+                    <button class="vote down">👎 <span></span></button>
+                  </div>
+                </div>
+                <div class="comment-body">
+                  <span class="comment-text">하하하하핳ㅎㅎ하하ㅏㅎㅎ핳</span>
+                  <div class="comment-btn">
+                    <div class="commenteditor">
+                      <button class="updata">수정</button>
+                    </div>
+                    <div class="commenteditor">
+                      <button class="delete">삭제</button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="comment-footer">
+                  <div class="input-timebox">
+                    <span class="input-time">09:32:20</span>
+                    <button class="reply-btn ml2">↳ 덧글</button>
+                  </div>
+                  <button class="report mr2">🚨</button>
+                </div>
+
+                <!-- 대댓글 입력창  -->
+                <div class="comment-reply reply-input" style="display: none">
+                  <input type="text" placeholder="답글을 입력하세요" />
+                  <button>등록</button>
+                </div>
+              </div>
+
+
+              <div class="comments-repeat pb2">
+                <div class="comment-header">
+                  <div class="user-nickname">
+                    <p>눈야임마</p>
+                  </div>
+                  <div class="vote-buttons">
+                    <button class="vote up">👍 <span>3</span></button>
+                    <button class="vote down">👎 <span></span></button>
+                  </div>
+                </div>
+                <div class="comment-body">
+                  <span class="comment-text">하하하하핳ㅎㅎ하하ㅏㅎㅎ핳</span>
+                  <div class="comment-btn">
+                    <div class="commenteditor">
+                      <button class="updata">수정</button>
+                    </div>
+                    <div class="commenteditor">
+                      <button class="delete">삭제</button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="comment-footer">
+                  <div class="input-timebox">
+                    <span class="input-time">09:32:20</span>
+                    <button class="reply-btn ml2">↳ 덧글</button>
+                  </div>
+                  <button class="report mr2">🚨</button>
+                </div>
+
+                <!-- 대댓글 입력창  -->
+                <div class="comment-reply reply-input" style="display: none">
+                  <input type="text" placeholder="답글을 입력하세요" />
+                  <button>등록</button>
+                </div>
+              </div>
+
+
+              <div class="comments-repeat pb2">
+                <div class="comment-header">
+                  <div class="user-nickname">
+                    <p>눈야임마</p>
+                  </div>
+                  <div class="vote-buttons">
+                    <button class="vote up">👍 <span>3</span></button>
+                    <button class="vote down">👎 <span></span></button>
+                  </div>
+                </div>
+                <div class="comment-body">
+                  <span class="comment-text">하하하하핳ㅎㅎ하하ㅏㅎㅎ핳</span>
+                  <div class="comment-btn">
+                    <div class="commenteditor">
+                      <button class="updata">수정</button>
+                    </div>
+                    <div class="commenteditor">
+                      <button class="delete">삭제</button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="comment-footer">
+                  <div class="input-timebox">
+                    <span class="input-time">09:32:20</span>
+                    <button class="reply-btn ml2">↳ 덧글</button>
+                  </div>
+                  <button class="report mr2">🚨</button>
+                </div>
+
+                <!-- 대댓글 입력창  -->
+                <div class="comment-reply reply-input" style="display: none">
+                  <input type="text" placeholder="답글을 입력하세요" />
+                  <button>등록</button>
+                </div>
+              </div>
+
+
+
+
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <!-- 덧글 창 js-->
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const replyButtons = document.querySelectorAll(".reply-btn");
+
+        replyButtons.forEach((btn) => {
+          btn.addEventListener("click", () => {
+            const replyInput =
+              btn.closest(".comment-footer").nextElementSibling;
+
+            if (
+              replyInput &&
+              (replyInput.style.display === "none" || !replyInput.style.display)
+            ) {
+              replyInput.style.display = "flex"; // 열기
+            } else if (replyInput) {
+              replyInput.style.display = "none"; // 닫기
+            }
+          });
+        });
+      });
+    </script>
+
+    <script type="module">
+      import { setupMainHeader, setupFooter } from "./layout.js";
+
+      setupMainHeader("guest"); // or "guest"
+      setupFooter(); // ID가 footer인 div에 footer.html 삽입
+    </script>
+  </body>
+</html>

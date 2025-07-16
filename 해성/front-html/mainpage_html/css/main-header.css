@@ -13,19 +13,40 @@
 }
 
 .logo img {
-  max-height: 3.8rem;
+  max-height: 2.5rem;
   object-fit: contain;
 }
 
-.auth-area a {
-  font-size: 1rem;
-  color: var(--primary-blue1);
-  font-weight: bold;
-}
+.auth-area{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    min-height: 2rem; /* or 버튼 높이에 맞춰 설정 */
+    align-items: center;
+    justify-content: center;
+  }
 
 .auth-area .logout {
   display: none;
 }
+
+.a-rounded {
+  font-size: 1rem;
+  color: var(--primary-blue1);
+  font-weight: 600;
+}
+
+a.a-rounded:hover {
+  background-color: var(--primary-blue1);
+  color: var(--white);
+  padding: 6px 14px;
+  border-radius: 999px;
+  border: 1px solid var(--primary-blue1);
+  transform: translateY(-1px);
+  transition: all 0.2s ease-in-out;
+}
+
+
 
 /* 내비게이션 전체 구조 */
 .nav-bar {
@@ -34,6 +55,12 @@
   align-items: center;
   gap: 1rem;
   width: 100%;
+}
+
+form#searchForm {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .search-bar {
@@ -49,6 +76,7 @@
 
 .search-bar input {
   flex: 1;
+  width: 100%;
   padding: 0.6rem 0.5rem;
   border: none;
   border-radius: 1rem;
@@ -90,6 +118,7 @@
   font-weight: bold;
   position: relative;
 }
+
 
 /* 서브메뉴 영역 */
 .submenu-box {
@@ -150,6 +179,11 @@
 }
 
 @media screen and (min-width: 768px){
+  .logo img {
+  max-height: 3.8rem;
+  object-fit: contain;
+}
+
   .auth-area .logout {
     display: flex;
 }
@@ -157,8 +191,8 @@
   .auth-area{
     display: flex;
     flex-direction: row;
-    gap: 2rem;
-    min-height: 2.5rem; /* or 버튼 높이에 맞춰 설정 */
+    gap: 1rem;
+    min-height: 2rem;
     align-items: center;
     justify-content: center;
   }
@@ -167,10 +201,15 @@
     flex-direction: row-reverse;
     align-items: flex-start;
   }
-
+  
+  form#searchForm {
+    justify-content: flex-end;
+  }
+  
   .search-bar {
-    width: 50%;
-    min-width: 6rem;
+    width: 100%;
+    max-width: 15rem;
+    margin: 0;
   }
 
 }

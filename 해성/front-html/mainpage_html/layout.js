@@ -29,7 +29,7 @@ function initHeaderInteractions(status) {
 
   function renderAuthMenu() {
     if (!authArea) return;
-    authArea.innerHTML = (status === "guest")
+    authArea.innerHTML = (status === "user")
       ? `<a href="#" class="a-rounded signup">회원가입</a>
          <a href="#" class="a-rounded login pl2">로그인</a>`
       : `<a href="#" class="a-rounded cart pl2">장바구니</a>

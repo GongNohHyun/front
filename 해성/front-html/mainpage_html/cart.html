@@ -5,12 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>cart</title>
     <link rel="stylesheet" href="./css/00_style.css" />
-    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/simple-header.css" />
     <link rel="stylesheet" href="./css/footer.css" />
     <link rel="stylesheet" href="./css/cart.css">
 </head>
 <body>
-<div class="page">
+<div class="page pagefull">
   <div id="simple-header"></div>
 
   <!-- 장바구니 본문 -->
@@ -57,6 +57,96 @@
                 <div class="price">₩500</div>
           </li>
       <!-- 다른 항목들도 같은 형식으로 반복 -->
+
+          <li class="cart-item">
+            <input type="checkbox" class="item-checkbox">
+              <img src="img/episode1.jpg" alt="썸네일">
+                <div class="item-number">1화</div>
+                <div class="item-info">
+                <a class="title a-float-text">내일은 온다</a>
+                <p class="author">작가</p>
+                </div>
+                <div class="price">₩500</div>
+          </li>
+
+          <li class="cart-item">
+            <input type="checkbox" class="item-checkbox">
+              <img src="img/episode1.jpg" alt="썸네일">
+                <div class="item-number">1화</div>
+                <div class="item-info">
+                <a class="title a-float-text">내일은 온다</a>
+                <p class="author">작가</p>
+                </div>
+                <div class="price">₩500</div>
+          </li>
+
+          <li class="cart-item">
+            <input type="checkbox" class="item-checkbox">
+              <img src="img/episode1.jpg" alt="썸네일">
+                <div class="item-number">1화</div>
+                <div class="item-info">
+                <a class="title a-float-text">내일은 온다</a>
+                <p class="author">작가</p>
+                </div>
+                <div class="price">₩500</div>
+          </li>
+
+          <li class="cart-item">
+            <input type="checkbox" class="item-checkbox">
+              <img src="img/episode1.jpg" alt="썸네일">
+                <div class="item-number">1화</div>
+                <div class="item-info">
+                <a class="title a-float-text">내일은 온다</a>
+                <p class="author">작가</p>
+                </div>
+                <div class="price">₩500</div>
+          </li>
+
+          <li class="cart-item">
+            <input type="checkbox" class="item-checkbox">
+              <img src="img/episode1.jpg" alt="썸네일">
+                <div class="item-number">1화</div>
+                <div class="item-info">
+                <a class="title a-float-text">내일은 온다</a>
+                <p class="author">작가</p>
+                </div>
+                <div class="price">₩500</div>
+          </li>
+
+          <li class="cart-item">
+            <input type="checkbox" class="item-checkbox">
+              <img src="img/episode1.jpg" alt="썸네일">
+                <div class="item-number">1화</div>
+                <div class="item-info">
+                <a class="title a-float-text">내일은 온다</a>
+                <p class="author">작가</p>
+                </div>
+                <div class="price">₩500</div>
+          </li>
+
+          <li class="cart-item">
+            <input type="checkbox" class="item-checkbox">
+              <img src="img/episode1.jpg" alt="썸네일">
+                <div class="item-number">1화</div>
+                <div class="item-info">
+                <a class="title a-float-text">내일은 온다</a>
+                <p class="author">작가</p>
+                </div>
+                <div class="price">₩500</div>
+          </li>
+
+          <li class="cart-item">
+            <input type="checkbox" class="item-checkbox">
+              <img src="img/episode1.jpg" alt="썸네일">
+                <div class="item-number">1화</div>
+                <div class="item-info">
+                <a class="title a-float-text">내일은 온다</a>
+                <p class="author">작가</p>
+                </div>
+                <div class="price">₩500</div>
+          </li>
+
+          
 
 
         </ul>
@@ -115,20 +205,19 @@
   });
 </script>
 
-        <!-- 헤더 햄버거 -->
-    <script>
-      function setHeaderToggleEvent() {
-        document
-          .querySelector(".mobile-toggle")
-          ?.addEventListener("click", function () {
-            document.querySelector(".mobile-nav")?.classList.toggle("active");
-          });
+<script>
+      // 로그인 상태
+      const status = "user"; // 또는 "user"
 
-        document
-          .querySelector(".pc-toggle")
-          ?.addEventListener("click", function () {
-            document.querySelector(".pc-nav")?.classList.toggle("active");
-          });
+      // 상태에 따른 아이콘 변경
+      function renderAuthMenu() {
+        const authArea = document.querySelector(".auth-area");
+        if(!authArea) return;
+        authArea.innerHTML = (status === "guest")
+        ?`<a href="#" class="a-rounded-al signup">회원가입</a>
+        <a href="#" class="a-rounded-al login pl2">로그인</a>`
+        : `<a href="#" class="a-rounded-al cart pl2">장바구니</a>
+        <a href="#" class="a-rounded-al wishlist pl2">찜목록</a>`
       }
 
       // 공통 헤더 불러오기
@@ -136,10 +225,10 @@
         .then((res) => res.text())
         .then((data) => {
           document.getElementById("simple-header").innerHTML = data;
-          setHeaderToggleEvent();
+          renderAuthMenu();
         });
 
-      // 공통 푸터 불러오기
+        // 공통 푸터 불러오기
       fetch("./footer.html")
         .then((res) => res.text())
         .then((data) => {

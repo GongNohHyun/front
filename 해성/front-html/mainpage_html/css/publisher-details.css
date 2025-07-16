@@ -13,7 +13,7 @@
   background-color: var(--white);
   border-radius: 1rem;
   padding: 1rem 0.5rem;
-  border: 1px solid #ccc;
+  border: 1px solid #eee;
   box-shadow: 0 2px 6px rgba(0,0,0,0.08);
   
 }
@@ -39,7 +39,7 @@
 .publisher-image {
   width: 100px;
   height: 100px;
-  border: 1px solid #ccc;
+  border: 1px solid #eee;
   border-radius: 50px;
   background-color: var(--white);
 }

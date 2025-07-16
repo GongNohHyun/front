@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+KR:wght@100..900&display=swap');
+
 
 /* 공통 컬러 */
 :root {
@@ -59,108 +61,9 @@ li {list-style-type: none;}
 
 a {text-decoration: none; cursor: pointer}
 
-a.a-rounded {
-  display: inline-block;
-  background-color: var(--white);
-  color: var(--primary-blue1); /* 기본 글자색 */
-  font-weight: 600;
-  line-height: 1.2;
-  text-align: center;
-  transition: all 0.2s ease-in-out;
-  vertical-align: middle;
-}
-
-a.a-rounded:hover {
-  background-color: var(--primary-blue1); /* 배경색 어둡게 */
-  color: var(--white); /* 글자 흰색으로 반전 */
-  border: 2px solid var(--primary-blue1);
-  border-radius: 999px; /* 완전 둥글게 */
-  padding: 6px 14px;
-}
-
-a.a-rounded:focus {
-  outline: none;
-}
-
-.a-rounded-al {
-  background-color: var(--primary-blue2); /* 배경색 어둡게 */
-  color: var(--white); /* 글자 흰색으로 반전 */
-  border: 2px solid var(--primary-blue2);
-  border-radius: 999px; /* 완전 둥글게 */
-  padding: 6px 14px;
-  font-weight: bold;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  display: inline-block;        /* 중요! */
-  transition: all 0.2s ease-in-out;
-}
-
-a.a-rounded-al:hover {
-  background-color: var(--primary-blue1); /* 배경색 어둡게 */
-  color: var(--white); /* 글자 흰색으로 반전 */
-  border: 2px solid var(--primary-blue1);
-  border-radius: 999px; /* 완전 둥글게 */
-  padding: 6px 14px;
-  transform: translateY(-1px);
-}
-
-a.a-float-text {
-  display: inline-block;
-  color: var(--dark); /* 기본 색상 */
-  font-weight: 400;
-  text-decoration: none;
-  transition: all 0.2s ease-in-out;
-}
-
-a.a-float-text:hover {
-  transform: translateY(-2px); /* 살짝 떠오름 */
-  color: var(--primary-blue1); /* 더 진한 색상으로 */
-  font-weight: 800; /* 글자 두께도 살짝 강조 */
-}
-
-
 button {all: unset; cursor: pointer;
 }
 
-button.btn-text-danger:hover {
-    display: inline-block;
-    color: white;
-    background-color: var(--danger);
-    text-align: center;
-    transition: all 0.2s ease-in-out;
-    border-radius: 999px;
-    padding: 2px 6px;
-}
-
-button.btn-text-like:hover {
-    display: inline-blok;
-    color: white;
-    background-color: var(--warning);
-    border: 2px solid rgba(0, 0, 0, 0.014);
-    text-align: center;
-    transition: all 0.2s ease-in-out;
-    border-radius: 999px;
-    padding: 2px 6px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-button.btn-rounded {
-  display: inline-block;
-  background-color: var(--primary-blue2);
-  color: var(--white);
-  font-weight: bold;
-  text-align: center;
-  transition: all 0.2s ease-in-out;
-  border: 2px solid transparent;
-  border-radius: 999px;
-  padding: 6px 14px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-button.btn-rounded:hover {
-  background-color: var(--primary-blue1);
-  color: white;
-  border: 2px solid var(--primary-blue1);
-}
 
 
 /* 공통 여백 정하기 */
@@ -258,6 +161,3 @@ button.btn-rounded:hover {
 @media screen and (min-width: 1024px){
     .page {width: 60vw;}
 }
-
-
-

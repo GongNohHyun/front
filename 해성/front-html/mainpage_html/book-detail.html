@@ -316,5 +316,28 @@
       }
 
     </script>
+
+    <!-- 7월 15일 추가 -->
+
+    <script>
+      // 1. 모든 좋아요 버튼 선택
+  const likeButtons = document.querySelectorAll(".like");
+
+  likeButtons.forEach((btn) => {
+    let isLiked = false; // 각 버튼의 상태 저장
+
+    btn.addEventListener("click", () => {
+      isLiked = !isLiked;
+
+    if (isLiked) {
+        btn.classList.add("active"); // 좋아요 ON 상태
+        // 버튼 스타일 바꾸고 싶으면 여기서 조작
+      } else {
+        btn.classList.remove("active"); // 좋아요 OFF 상태
+      }
+    });
+  });
+
+    </script>
   </body>
 </html>

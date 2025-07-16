@@ -11,6 +11,8 @@
   aspect-ratio: 2 / 3;
   object-fit: cover;
   border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 51, 153, 0.15),  
+              0 0 0.6rem rgba(0, 51, 153, 0.2);
 }
 
 
@@ -36,7 +38,82 @@
   align-items: flex-end;
 }
 
+/* 버튼 */
+
+.a-rounded-al {
+  background-color: var(--primary-blue2);
+  color: var(--white);
+  border: 1px solid var(--primary-blue2);
+  border-radius: 999px;
+  padding: 6px 14px;
+  font-weight: 700;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+a.a-rounded-al:hover {
+  background-color: var(--primary-blue1);
+  border: 1px solid var(--primary-blue1);
+  transition: all 0.2s ease-in-out;
+  transform: translateY(-1px);
+}
+
+.btn-rounded {
+  background-color: var(--primary-blue2);
+  color: var(--white);
+  border: 1px solid var(--primary-blue2);
+  border-radius: 999px;
+  padding: 6px 14px;
+  font-weight: 700;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+button.btn-rounded:hover {
+  background-color: var(--primary-blue1);
+  border: 1px solid var(--primary-blue1);
+  transition: all 0.2s ease-in-out;
+  transform: translateY(-1px);
+}
+
+/* 리뷰 버튼 */
+
+.btn-text-danger{
+  padding: 1px 3px;
+  margin: 1px;
+}
+
+.btn-text-like{
+  padding: 1px 3px;
+  margin: 1px;
+}
+
+.btn-text-danger:hover {
+  display: inline-block;
+  color: var(--white);
+  font-weight: 600;
+  background-color: var(--danger);
+  padding: 1px 3px;
+  border-radius: 999px;
+  transition: all 0.2s ease-in-out;
+  transform: translateY(-1px);
+  margin: 1px;
+}
+
+.like.active {
+  display: inline-block;
+  color: var(--white);
+  font-weight: 600;
+  background-color: var(--warning);
+  padding: 1px 3px;
+  border-radius: 999px;
+  transition: all 0.2s ease-in-out;
+  transform: translateY(-1px);
+  margin: 1px;
+}
+
+/* 도서 소개 */
+
 .book-description {
+  width: 100%;
   border: 1px solid #ccc;
   border-radius: 1rem;
   padding: 1rem 0.5rem;
@@ -74,6 +151,7 @@
 .webtoon-episode-list .btn-rounded {
   width: 90%;
   margin: 0 auto;
+  text-align: center;
 }
 
 .episode-item {
@@ -198,15 +276,10 @@
 }
 
 @media screen and (min-width: 768px) {
+
   .webtoon-series-detail {
     flex-direction: column;
     align-items: flex-start;
-  }
-  .webtoon-series-cover {
-    width: 40%;
-  }
-  .webtoon-series-info {
-    width: 60%;
   }
 
   .book-description{

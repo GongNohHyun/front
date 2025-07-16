@@ -135,6 +135,21 @@
   gap: 1rem;
 }
 
+.btn-rounded {
+  background-color: var(--primary-blue2);
+  color: var(--white);
+  border-radius: 999px;
+  padding: 6px 14px;
+  font-weight: 700;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+button.btn-rounded:hover {
+  background-color: var(--primary-blue1);
+  transition: all 0.2s ease-in-out;
+  transform: translateY(-1px);
+}
+
 .btn-rounded.cancel {
   background-color: var(--secondary-light)
 }

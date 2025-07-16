@@ -1,4 +1,4 @@
-/* 헤더 */
+/* 세컨 헤더 */
 
 .simple-header {
   display: flex;
@@ -13,7 +13,19 @@
 }
 
 .a-rounded-al {
-    background-color: var(--white);
-    border: 1px solid #ccc;
-    color: var(--primary-blue1);
+  font-size: 1rem;
+  color: var(--primary-blue1);
+  font-weight: 600;
+      
 }
+
+a.a-rounded-al:hover {
+  background-color: var(--primary-blue1);
+  color: var(--white);
+  padding: 6px 14px;
+  border-radius: 999px;
+  border: 1px solid var(--primary-blue1);
+  transform: translateY(-1px);
+  transition: all 0.2s ease-in-out;
+}
+
